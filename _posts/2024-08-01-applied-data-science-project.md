@@ -66,11 +66,11 @@ The dataset consists of the following fields:
 
 The data preparation process revolved around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. 
 
-Data Pre-processing: 
+#### Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
 - Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
 
-Text Pre-processing:
+#### Text Pre-processing:
 - Convert all text within the review body to lowercase to normalise the reviews before tokenization.
 - Removal of punctuation (including special characters) that serve as noise in the dataset.
 - Removal of numbers from reviews.
