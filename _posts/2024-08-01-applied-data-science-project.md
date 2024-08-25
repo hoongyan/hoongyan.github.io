@@ -184,9 +184,11 @@ Subsequently, the Apriori Algorithm was used to generate frequent itemsets and a
 
 The top two rules that reflected high lift, confidence and support leading to clients not recommending the airline mainly pertained to cabin staff service, seat comfort and food and beverages. Thus, these areas could be prioritised for the design of automated responses among the 4 areas of concern identified previously.   
 
+<img width="696" alt="Screenshot 2024-08-25 at 10 35 06 PM" src="https://github.com/user-attachments/assets/30face6f-fc90-41e6-bd0f-b3d5a9958398">
+
 <img width="1147" alt="Screenshot 2024-08-25 at 10 36 01 PM" src="https://github.com/user-attachments/assets/0795a285-4d06-4f19-9b54-8411094c2f2b">
 
-<img width="696" alt="Screenshot 2024-08-25 at 10 35 06 PM" src="https://github.com/user-attachments/assets/30face6f-fc90-41e6-bd0f-b3d5a9958398">
+
 
 ### Evaluation
 
