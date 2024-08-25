@@ -83,22 +83,33 @@ The data preparation process revolved around cleaning and transforming the datas
 - Removal of numbers from reviews.
   - Figures in the review are rather specific and may not necessarily provide additional information on the broad topic.
   - Presence of numbers that possibly represent dates, prices, and flight numbers (e.g. 747-400, BA12)
+
 <img width="610" alt="Screenshot 2024-08-25 at 9 53 58 PM" src="https://github.com/user-attachments/assets/1b0e1393-2d01-4765-8827-308387706244">
+
 - Tokenize words in ‘ReviewBody’ column.
+
 <img width="400" alt="Screenshot 2024-08-25 at 9 54 51 PM" src="https://github.com/user-attachments/assets/f7d1b155-65dd-4022-87cc-745fa1e4a57e">
+
 - Remove stop words and domain stop words.
   - Several domain stop words pertaining to British Airlines were found, i.e. british airways/airline/aircraft, flight/flights, ba (acronym for British Airways), plane.
+
 <img width="833" alt="Screenshot 2024-08-25 at 10 14 54 PM" src="https://github.com/user-attachments/assets/55fc7cb2-3267-4a87-9fb7-1983967dcbd0">
 <img width="424" alt="Screenshot 2024-08-25 at 10 15 14 PM" src="https://github.com/user-attachments/assets/f83b702d-8077-4308-b436-9fb96fa8524e">
+
 - Removal of tokens made up of less than 3 characters.
   - Words of with one or two characters are present and typically do not add meaningful information e.g. "us", "on", "h" (possibly after removal of numbers).
+
 <img width="483" alt="Screenshot 2024-08-25 at 10 16 22 PM" src="https://github.com/user-attachments/assets/43092e06-64f0-4005-bdd1-63c58648236d">
+
 - Lemmatization was conducted to normalise them into a single base form.
   - Words of various forms (possibly with similar meanings) are present and remain unstandardised, e.g. "fly" vs "flying" and "refused" vs "refusal" vs "refuse".
   - Note: No stemming was performed as it is important to retain context-specific terms for further analysis.
+
 <img width="540" alt="Screenshot 2024-08-25 at 10 16 40 PM" src="https://github.com/user-attachments/assets/2e9489b7-6c13-434c-8023-a86315bd5a49">
+
 - Perform POS Tagging
   - Remove specific parts of speech (including Conjunctions, Prepositions, Determiners, Personal Pronouns, Auxiliary Verbs, Interjections) which may not necessarily add meaningful information for subsequent modelling.
+
 <img width="582" alt="Screenshot 2024-08-25 at 10 17 15 PM" src="https://github.com/user-attachments/assets/0d035c60-1187-4d7f-9afb-e9a8b404d0ce">
 
 The cleaned dataset was then used to perform topic modelling and association rule mining.  
