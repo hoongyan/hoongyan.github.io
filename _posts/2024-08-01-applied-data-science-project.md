@@ -10,21 +10,6 @@ categories: ITD214
 
 This project is based on a dataset containing customer feedback for British Airways, collected from AirlineQuality through web scraping. It includes both quantitative and qualitative data, providing a comprehensive view of passenger experiences. Key attributes in the dataset cover overall ratings, detailed review texts, traveler types, service ratings (e.g., seat comfort, cabin staff service, ground service), and recommendations.
 
-Columns in the Dataset:
-OverallRating: The overall rating given by the customer (1-10 scale).
-ReviewHeader: A brief title summarizing the customer's review.
-Name: Name of the customer.
-Datetime: Date and time when the feedback was posted.
-VerifiedReview: Indicates whether the review is verified.
-ReviewBody: Detailed text of the customer’s review.
-TypeOfTraveller: The type of traveler (e.g., Business, Leisure).
-SeatType: Class of the traveler (e.g., Business, Economy).
-Route: The flight route taken by the customer.
-DateFlown: Date when the flight was taken.
-Service Ratings: Numerical ratings for aspects like SeatComfort, CabinStaffService, GroundService, Food&Beverages, InflightEntertainment, and Wifi&Connectivity.
-Recommended: Whether the customer recommends British Airways (yes/no).
-Aircraft: Model of the aircraft used for the flight.
-
 ### Business Goal
 
 Based on the existing information, the primary business goal would be to improve British Airways' business by 10% by enhancing customer satisfaction based on past customer reviews. 
