@@ -103,18 +103,23 @@ Prior to the modelling, further data preprocessing steps were performed:
 The modeling approach will involve two techniques: topic modeling and association rule mining. For topic modeling, two different models will be employed - the Latent Dirichlet Allocation (LDA) model and the BERTopic model.
 
 #### Topic Modelling 
-Word representation of reviews: 
-Vectorisation of document performed using TF-IDF.
-TF-IDF is useful as it can emphasize terms that are most representative of a topic as instead of those that are too common.  
-Terms that are rare and specific to a document get higher scores.
+Using the cleaned dataset, the 'CleanText' field is vectorised using Term Frequency (TF-IDF) to create the word representation of the reviews. TF-IDF is useful as it can emphasize terms that are most representative of a topic as instead of those that are too common, especially since terms that are rare and specific to a document get higher scores. Subsequently,two models were used for topic modelling, namely the Latent Dirichlet Allocation (LDA) model as well as BERTopic model. 
 
-Latent Dirichlet Allocation (LDA) model was trained using the vectorised document. 
-A perplexity chart was created to evaluate the optimal number of topics between a range of 1 to 20.
-Optimal number of topics was identified as 7.
-Based on Intertopic Distance Map, Topic 1,2, 3 and 4 are the most prominent areas of concern and are relatively distinct as they do not overlap/overlap minimally.  
-The relevant words featured in these four topics mainly relate to seat comfort, cabin service, ground service and food and beverages.
+##### Latent Dirichlet Allocation (LDA) Model 
+The LDA model is a probabilistic model that identifies hidden topics within a collection of documents by representing each document as a mixture of topics and each topic as a distribution of words.
+
+The LDA model was trained using the vectorised document. In order to find the optimal number of topics, a perplexity chart was generated between a range of 1 to 20 topics. The optimal number of topics was identified as 7.
+
+Based on Intertopic Distance Map, Topic 1,2, 3 and 4 are the most prominent areas of concern and are relatively distinct as they do not overlap or overlap minimally.  
+The relevant words featured in these four topics mainly relate to *seat comfort, cabin service, ground service and food and beverages*.
+
+##### BERTopic Model 
+As a comparison, the BERTopic model, which uses BERT embeddings and clustering algorithms to identify and extract topics from text data, was employed to train the vectorised document as well. 
+
+Using the optimal number of topics derived from the LDA model, the BERTopic model similarly generated 7 topics, which mainly related to the same areas of concern, namely *seat comfort, cabin service, ground service and food and beverages*.
 
 #### Association Rule Mining 
+Upon identifying the four key areas to target, association rule mining was used to identify the top 3 areas to prioritise. 
 
 ### Evaluation
 
@@ -127,7 +132,7 @@ Country or flight specific terms (e.g. London, Heathrow)
 Nouns cannot be removed entirely as many are related to the topics surfaced. 
 
 Comparison with BERTopic Model
-BERTopic model leverages on BERT embeddings, dimensionality reduction and clustering to identify and extract topics from text data. 
+
 Though the average coherence score is higher for BERT (BERT: 0.443 vs LDA: 0.372), the overall topics surfaced were comparable across both models. 
 
 
