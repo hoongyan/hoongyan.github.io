@@ -68,8 +68,22 @@ The data preparation process revolved around cleaning and transforming the datas
 
 #### Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
+  - ‘Datetime’ and ‘DateFlown’ are not in datetime format
 - Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
+  - Missing values detected in several fields.
+    Datetime (~20.5%)
+    TypeOfTraveller (~20.8%)
+    Route (~20.9%)
+    DateFlown (~21%)
+    SeatComfort (~3.1%)
+    CabinStaffService (~3.4%)
+    GroundService (~22.9%)
+    Aircraft (~48.1%)
+    Food&Beverages (~10.4%)
+    InflightEntertainment (~31.1%)
+    Wifi&Connectivity (~83.5%)
 
+  
 #### Text Pre-processing:
 - Convert all text within the review body to lowercase to normalise the reviews before tokenization.
 - Removal of punctuation (including special characters) that serve as noise in the dataset.
