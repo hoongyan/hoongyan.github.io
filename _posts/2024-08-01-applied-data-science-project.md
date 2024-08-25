@@ -29,15 +29,12 @@ To achieve this goal, a series of business objectives have been established, as 
 
 The main objective of focus for this project is to reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies (S/N 1 in table).
 
-This can be achieved by identifying the top 4 areas of concern that constitute the highest volume of complaints/negative reviews. Subsequently, the top 3 most impactful clusters By automating responses to frequently mentioned issues, British Airways can improve customer service efficiency, address concerns more promptly, and enhance customer satisfaction. Additionally, by focusing on common complaints, the airline can proactively manage service quality and reduce the number of negative reviews.
-
-The success criteria includes:
-- To identify top 4 clusters that constitute the highest volume of complaints/negative reviews (through topic modelling).
-- To identify the top 3 most impactful clusters that should be prioritised in the design of automated responses (through association rule mining).
-Suitability of topics for automated replies will also be reviewed as this mode of response may not be appropriate for all areas of concern.
+This can be achieved by identifying the top 4 areas of concern that constitute the highest volume of complaints/negative reviews. Subsequently, the top 3 most impactful clusters that should be prioritised in the design of the automated responses will be identified. The suitability of the topics should be reviewed since this mode of response may not necessarily be appropriate for all areas of concern. 
 
 ## Work Accomplished
-Document your work done to accomplish the outcome
+The approach for the 
+
+This is detailed below. 
 
 ### Data Preparation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
