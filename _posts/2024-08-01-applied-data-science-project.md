@@ -34,10 +34,10 @@ The primary goal is to boost British Airways' business performance by 10%. This 
 
 | S/N                    | Business Objective                | Individual  |
 |------------------------|-----------------------------------|--------|
-| Hoong Yan              | To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies. | Yan   |
-| Carlin                 | To analyse review topics for the four different seat types for a more targeted marketing approach, improving business by 10%           | Carlin   |
-| Bridget                | To identify areas of customer satisfaction for marketing purposes, to improve business by 10% | Bridget   |
-| Vivienne               | To reduce negative review sentiments by 10% to improve customer satisfaction and demand.  | Vivienne   |
+| 1             | To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies. | Yan   |
+| 2                 | To analyse review topics for the four different seat types for a more targeted marketing approach, improving business by 10%           | Carlin   |
+| 3                | To identify areas of customer satisfaction for marketing purposes, to improve business by 10% | Bridget   |
+| 4               | To reduce negative review sentiments by 10% to improve customer satisfaction and demand.  | Vivienne   |
 
 Business Objective of Focus: To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies.
 
