@@ -197,7 +197,7 @@ An evaluation of the two models - LDA and BERTopic models - employed for topic m
 
 Based on the coherence score for the LDA model as well as the average coherence score for the BERTopic model, it seems that the latter was the better model. 
   - LDA model: 0.3723
-  - BERTopic model: 0.443
+  - BERTopic model: 0.4623
 
 Though this may be the case, both models had comparable results in terms of the areas of concern that were largely highlighted amongst the negative reviews. 
 
@@ -241,3 +241,6 @@ In this project, the following potential data science ethics issues may surface:
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
+
+https://github.com/hoongyan/itd214_proj
+
