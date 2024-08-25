@@ -100,10 +100,36 @@ Prior to the modelling, further data preprocessing steps were performed:
   - 'CleanText' for Topic Modelling
 
 ### Modelling
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+The modeling approach will involve two techniques: topic modeling and association rule mining. For topic modeling, two different models will be employed - the Latent Dirichlet Allocation (LDA) model and the BERTopic model.
+
+#### Topic Modelling 
+Word representation of reviews: 
+Vectorisation of document performed using TF-IDF.
+TF-IDF is useful as it can emphasize terms that are most representative of a topic as instead of those that are too common.  
+Terms that are rare and specific to a document get higher scores.
+
+Latent Dirichlet Allocation (LDA) model was trained using the vectorised document. 
+A perplexity chart was created to evaluate the optimal number of topics between a range of 1 to 20.
+Optimal number of topics was identified as 7.
+Based on Intertopic Distance Map, Topic 1,2, 3 and 4 are the most prominent areas of concern and are relatively distinct as they do not overlap/overlap minimally.  
+The relevant words featured in these four topics mainly relate to seat comfort, cabin service, ground service and food and beverages.
+
+#### Association Rule Mining 
 
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
+#### Topic Modelling 
+
+The model’s effectiveness in generating distinct and coherent topics may have been influenced by the presence of the following terms that may not be useful for topic modelling:
+Sentiment-related terms (e.g. happy, frustrated) 
+Adjectives cannot be removed wholesale as some are important in interpreting the topic (e.g. narrow). 
+Country or flight specific terms (e.g. London, Heathrow) 
+Nouns cannot be removed entirely as many are related to the topics surfaced. 
+
+Comparison with BERTopic Model
+BERTopic model leverages on BERT embeddings, dimensionality reduction and clustering to identify and extract topics from text data. 
+Though the average coherence score is higher for BERT (BERT: 0.443 vs LDA: 0.372), the overall topics surfaced were comparable across both models. 
+
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations
