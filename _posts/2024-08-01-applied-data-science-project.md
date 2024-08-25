@@ -32,7 +32,13 @@ The main objective of focus for this project is to reduce response time by 10% b
 This can be achieved by identifying the top 4 areas of concern that constitute the highest volume of complaints/negative reviews. Subsequently, the top 3 most impactful clusters that should be prioritised in the design of the automated responses will be identified. The suitability of the topics should be reviewed since this mode of response may not necessarily be appropriate for all areas of concern. 
 
 ## Work Accomplished
-The approach for the 
+The approach for the project can be summarised as below:
+- Data Pre-processing
+- Modelling 
+  - Employ Topic Modelling (LDA model) to identify potential common areas of concern.
+  - Use Association Rule Mining to understand relationship between identified areas of concern (e.g. seat comfort, food and beverages) and client’s preference to recommend the airline.
+- Model Comparison and Evaluation 
+
 
 This is detailed below. 
 
