@@ -64,7 +64,7 @@ The dataset consists of the following fields:
 - *InflightEntertainment*: Rating for inflight entertainment.
 - *Wifi&Connectivity*: Rating for onboard wifi and connectivity.
 
-The data preparation process revolved around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. 
+The data preparation process revolved around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. The data preparation steps are summarised below.
 
 #### Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
