@@ -164,6 +164,10 @@ As a comparison, the BERTopic model, which uses BERT embeddings and clustering a
 
 Using the optimal number of topics derived from the LDA model, the BERTopic model similarly generated 7 topics, which mainly related to the same areas of concern, namely *seat comfort, cabin service, ground service and food and beverages*.
 
+<img width="474" alt="image" src="https://github.com/user-attachments/assets/7f47dea4-983f-494e-b3ca-3c715bb2710a">
+
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/f16cab20-3962-4e37-a687-4ac392232170">
+
 #### Association Rule Mining 
 Upon identifying the four key areas to target, association rule mining was used to identify the top 3 areas to prioritise. 
 
