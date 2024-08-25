@@ -6,9 +6,9 @@ categories: ITD214
 ---
 ## Project Background
 
-# Overview of the British Airways Customer Feedback Dataset
+### Overview of the British Airways Customer Feedback Dataset
 
-This dataset contains customer feedback for British Airways, collected from AirlineQuality through web scraping. It includes both quantitative and qualitative data, providing a comprehensive view of passenger experiences. Key attributes in the dataset cover overall ratings, detailed review texts, traveler types, service ratings (e.g., seat comfort, cabin staff service, ground service), and recommendations. This dataset is ideal for conducting sentiment analysis, topic modeling, and understanding customer satisfaction.
+This project is based on a dataset containing customer feedback for British Airways, collected from AirlineQuality through web scraping. It includes both quantitative and qualitative data, providing a comprehensive view of passenger experiences. Key attributes in the dataset cover overall ratings, detailed review texts, traveler types, service ratings (e.g., seat comfort, cabin staff service, ground service), and recommendations.
 
 Columns in the Dataset:
 OverallRating: The overall rating given by the customer (1-10 scale).
@@ -24,13 +24,16 @@ DateFlown: Date when the flight was taken.
 Service Ratings: Numerical ratings for aspects like SeatComfort, CabinStaffService, GroundService, Food&Beverages, InflightEntertainment, and Wifi&Connectivity.
 Recommended: Whether the customer recommends British Airways (yes/no).
 Aircraft: Model of the aircraft used for the flight.
-Business Goal
 
-Enhance British Airways' Business by 10% by Improving Customer Satisfaction
+### Business Goal
 
-The primary goal is to boost British Airways' business performance by 10%. This can be achieved by enhancing customer satisfaction through targeted improvements in service areas highlighted in the customer feedback. Understanding the key drivers of customer satisfaction and dissatisfaction will help the airline to address specific issues and enhance overall customer experience.
+Based on the existing information, the primary business goal would be to improve British Airways' business by 10% by enhancing customer satisfaction based on past customer reviews. 
 
-# Business Objectives
+This can be accomplished by making targeted improvements in the service areas highlighted in customer feedback. By identifying the key factors that drive customer satisfaction and dissatisfaction, the airline can address specific issues and enhance the overall customer experience.
+
+To achieve this goal, a series of business objectives have been established, as outlined below (see table). 
+
+### Business Objectives
 
 | S/N                    | Business Objective                | Individual  |
 |------------------------|-----------------------------------|--------|
@@ -42,7 +45,6 @@ The primary goal is to boost British Airways' business performance by 10%. This 
 Business Objective of Focus: To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies.
 
 The objective is to reduce the response time to customer complaints by 10%. This will be achieved by identifying significant areas of concern through topic modeling and association rule mining. By automating responses to frequently mentioned issues, British Airways can improve customer service efficiency, address concerns more promptly, and enhance customer satisfaction. Additionally, by focusing on common complaints, the airline can proactively manage service quality and reduce the number of negative reviews.
-Business Goal: Improve business of British Airways by 10% by enhancing customer satisfaction based on past customer reviews. 
 
 ## Work Accomplished
 Document your work done to accomplish the outcome
