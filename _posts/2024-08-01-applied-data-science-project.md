@@ -69,7 +69,9 @@ The data preparation process revolved around cleaning and transforming the datas
 #### Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
   - ‘Datetime’ and ‘DateFlown’ are not in datetime format
-  <img width="697" alt="Screenshot 2024-08-25 at 9 50 51 PM" src="https://github.com/user-attachments/assets/00850108-996a-4018-8ebf-77bf5895102e">
+
+<img width="697" alt="Screenshot 2024-08-25 at 9 50 51 PM" src="https://github.com/user-attachments/assets/00850108-996a-4018-8ebf-77bf5895102e">
+
 - Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
   - Missing values were detected in several fields, including Datetime (~20.5%), TypeOfTraveller (~20.8%), Route (~20.9%), DateFlown (~21%), SeatComfort (~3.1%), CabinStaffService (~3.4%), GroundService (~22.9%), Aircraft (~48.1%), Food&Beverages (~10.4%), InflightEntertainment (~31.1%), Wifi&Connectivity (~83.5%).
 <img width="267" alt="Screenshot 2024-08-25 at 9 52 00 PM" src="https://github.com/user-attachments/assets/c01d6b4a-290b-4aa6-8a73-624ee6cf06f1">
@@ -169,27 +171,39 @@ Using the optimal number of topics derived from the LDA model, the BERTopic mode
 <img width="944" alt="image" src="https://github.com/user-attachments/assets/f16cab20-3962-4e37-a687-4ac392232170">
 
 #### Association Rule Mining 
-Upon identifying the four key areas to target, association rule mining was used to identify the top 3 areas to prioritise. 
+Upon identifying the four key areas to target, association rule mining was used to identify the top 3 areas to prioritise. This was conducted using the ratings provided for specific aspects of the flight, including seat comfort, cabin staff service, food & beverages and ground service.
 
 Using the dataset cleaned earlier, binary encoding was conducted by converting categorical and numerical data into boolean indicators (True/False) to prepare the dataset for association rule mining.
 
-Subsequently, the Apriori Algorithm was used to generate frequent itemsets and association rules. The top two rules that reflected high lift, confidence and support leading to clients not recommending the airline mainly pertained to cabin staff service, seat comfort and food and beverages. Thus, these areas could be prioritised for the design of automated responses among the 4 areas of concern identified previously.   
+<img width="588" alt="Screenshot 2024-08-25 at 10 34 50 PM" src="https://github.com/user-attachments/assets/18a7ecc0-2f00-4a99-b3c7-8cf765e7c97b">
+
+Subsequently, the Apriori Algorithm was used to generate frequent itemsets and association rules. 
+
+<img width="671" alt="Screenshot 2024-08-25 at 10 35 27 PM" src="https://github.com/user-attachments/assets/894c8e7c-aa70-416c-83fa-3c91c0a2e222">
+
+
+The top two rules that reflected high lift, confidence and support leading to clients not recommending the airline mainly pertained to cabin staff service, seat comfort and food and beverages. Thus, these areas could be prioritised for the design of automated responses among the 4 areas of concern identified previously.   
+
+<img width="1147" alt="Screenshot 2024-08-25 at 10 36 01 PM" src="https://github.com/user-attachments/assets/0795a285-4d06-4f19-9b54-8411094c2f2b">
+
+<img width="696" alt="Screenshot 2024-08-25 at 10 35 06 PM" src="https://github.com/user-attachments/assets/30face6f-fc90-41e6-bd0f-b3d5a9958398">
 
 ### Evaluation
-An evaluation of the two models - LDA and BERTopic models - employed for topic modelling is provided below. 
 
 #### Topic Modelling 
+An evaluation of the two models - LDA and BERTopic models - employed for topic modelling is provided below. 
 
-The model’s effectiveness in generating distinct and coherent topics may have been influenced by the presence of the following terms that may not be useful for topic modelling:
-Sentiment-related terms (e.g. happy, frustrated) 
-Adjectives cannot be removed wholesale as some are important in interpreting the topic (e.g. narrow). 
-Country or flight specific terms (e.g. London, Heathrow) 
-Nouns cannot be removed entirely as many are related to the topics surfaced. 
+Based on the coherence score for the LDA model as well as the average coherence score for the BERTopic model, it seems that the latter was the better model. 
+  - LDA model: 0.3723
+  - BERTopic model: 0.443
 
-Comparison with BERTopic Model
+Though this may be the case, both models had comparable results in terms of the areas of concern that were largely highlighted amongst the negative reviews. 
 
-Though the average coherence score is higher for BERT (BERT: 0.443 vs LDA: 0.372), the overall topics surfaced were comparable across both models. 
-
+In addition, the LDA model’s effectiveness in generating distinct and coherent topics may have been influenced by the presence of the following terms that may not be useful for topic modelling:
+- Sentiment-related terms (e.g. happy, frustrated) 
+  - Adjectives cannot be removed wholesale as some are important in interpreting the topic (e.g. narrow). 
+- Country or flight specific terms (e.g. London, Heathrow) 
+  - Nouns cannot be removed entirely as many are related to the topics surfaced. 
 
 ## Recommendation and Analysis
 Based on topic modeling, the top four areas of concern identified were seat comfort, ground service, cabin service, and food & beverages. 
