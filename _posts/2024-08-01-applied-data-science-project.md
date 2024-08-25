@@ -39,11 +39,53 @@ The approach for the project can be summarised as below:
   - Use Association Rule Mining to understand relationship between identified areas of concern (e.g. seat comfort, food and beverages) and client’s preference to recommend the airline.
 - Model Comparison and Evaluation 
 
-
-This is detailed below. 
+Each step is detailed below.  
 
 ### Data Preparation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
+The dataset consists of the following fields. 
+*OverallRating*: The overall rating given by the customer.
+*ReviewHeader*: The header or title of the customer's review.
+*Name*: The name of the customer providing the feedback.
+*Datetime*: The date and time when the feedback was posted.
+*VerifiedReview*: Indicates whether the review is verified or not.
+ReviewBody: The detailed body of the customer's review.
+TypeOfTraveller: The type of traveler (e.g., Business, Leisure).
+SeatType: Class of the traveler (e.g. Business, Economy).
+Route: The flight route taken by the customer.
+DateFlown: The date when the flight was taken.
+SeatComfort: Rating for seat comfort.
+CabinStaffService: Rating for cabin staff service.
+GroundService: Rating for ground service.
+ValueForMoney: Rating for the value for money.
+Recommended: Whether the customer recommends British Airways.
+Aircraft: The aircraft used for the flight.
+Food&Beverages: Rating for food and beverages.
+*InflightEntertainment*: Rating for inflight entertainment.
+*Wifi&Connectivity*: Rating for onboard wifi and connectivity.
+
+The data preparation revovled around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. 
+
+Data Pre-processing: 
+- Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
+- Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
+
+Text Pre-processing:
+- Convert all text within the review body to lowercase to normalise the reviews before tokenization.
+- Removal of punctuation (including special characters) that serve as noise in the dataset.
+- Removal of numbers from reviews.
+  - Figures in the review are rather specific and may not necessarily provide additional information on the broad topic.
+- Tokenize words in ‘ReviewBody’ column.
+- Remove stop words and domain stop words
+- Removal of tokens made up of less than 3 characters.
+- Lemmatization was conducted to normalise them into a single base form.
+- Map POS tags to WordNet POS Tags to facilitate lemmatization.
+- Lemmatize tokens with POS Tagging.
+  - No stemming was performed as it is important to retain context-specific terms for further analysis.
+- Perform POS Tagging
+  - Remove of specific parts of speech (including CC, IN, DT, PRP, AUX, UH)
+
+The cleaned dataset was then used to perform topic modelling and association rule mining.  
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
