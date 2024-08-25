@@ -142,14 +142,32 @@ Though the average coherence score is higher for BERT (BERT: 0.443 vs LDA: 0.372
 
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
+Based on topic modeling, the top four areas of concern identified were seat comfort, ground service, cabin service, and food & beverages. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Further analysis through association rule mining revealed that *seat comfort, cabin service, and food & beverages* should be prioritized as the three key aspects for the design of automated responses.
+
+With the narrowed scope of concerns, the following are possible aspects that British Airlines could address through automated responses:
+- Cabin Staff Service
+  - In-flight service info
+  - Flight attendant assistance
+  - Comfort and safety details
+- Seat Comfort
+  - Seat upgrade requests
+  - Seat feature details
+  - Comfort tips
+  - Complaint resolution (offer channels for clients to provide feedback)
+- Food & Beverages
+  - Menu details
+  - Quality and availability issues
+  - Service timing
+  - Feedback collection (offer channels for clients to provide feedback)
 
 ## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+In this project, the following potential data science ethics issues may surface:
+- Privacy: The use of customer reviews may raise privacy concerns if personally identifiable information (PII) is not adequately anonymized or if data is collected without user consent. Ensuring that data is de-identified and used in compliance with privacy regulations is essential.The data provides areas such as 
+- Fairness: There may be a risk of bias in the data, which could lead to unfair conclusions or recommendations. For example, if certain demographics are over- or under-represented in the reviews, the resulting models may not fairly represent all customer experiences.
+- Accuracy: Misclassification of topics or incorrect association rules could lead to ineffective or even harmful business decisions.Ensuring the accuracy of the models is crucial to avoid making misleading decisions based on incorrect data interpretations. 
+- Accountability: It is important to establish clear accountability for how data is used and decisions are made. Any automation of responses or service adjustments based on the model's outputs should be carefully monitored and evaluated to ensure it does not negatively impact customer service quality.
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
