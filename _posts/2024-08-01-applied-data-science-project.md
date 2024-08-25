@@ -121,7 +121,12 @@ Using the optimal number of topics derived from the LDA model, the BERTopic mode
 #### Association Rule Mining 
 Upon identifying the four key areas to target, association rule mining was used to identify the top 3 areas to prioritise. 
 
+Using the dataset cleaned earlier, binary encoding was conducted by converting categorical and numerical data into boolean indicators (True/False) to prepare the dataset for association rule mining.
+
+Subsequently, the Apriori Algorithm was used to generate frequent itemsets and association rules. The top two rules that reflected high lift, confidence and support leading to clients not recommending the airline mainly pertained to cabin staff service, seat comfort and food and beverages. Thus, these areas could be prioritised for the design of automated responses among the 4 areas of concern identified previously.   
+
 ### Evaluation
+An evaluation of the two models - LDA and BERTopic models - employed for topic modelling is provided below. 
 
 #### Topic Modelling 
 
