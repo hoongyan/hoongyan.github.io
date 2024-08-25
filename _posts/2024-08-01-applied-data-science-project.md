@@ -43,28 +43,28 @@ Each step is detailed below.
 
 ### Data Preparation
 
-The dataset consists of the following fields. 
-*OverallRating*: The overall rating given by the customer.
-*ReviewHeader*: The header or title of the customer's review.
-*Name*: The name of the customer providing the feedback.
-*Datetime*: The date and time when the feedback was posted.
-*VerifiedReview*: Indicates whether the review is verified or not.
-ReviewBody: The detailed body of the customer's review.
-TypeOfTraveller: The type of traveler (e.g., Business, Leisure).
-SeatType: Class of the traveler (e.g. Business, Economy).
-Route: The flight route taken by the customer.
-DateFlown: The date when the flight was taken.
-SeatComfort: Rating for seat comfort.
-CabinStaffService: Rating for cabin staff service.
-GroundService: Rating for ground service.
-ValueForMoney: Rating for the value for money.
-Recommended: Whether the customer recommends British Airways.
-Aircraft: The aircraft used for the flight.
-Food&Beverages: Rating for food and beverages.
-*InflightEntertainment*: Rating for inflight entertainment.
-*Wifi&Connectivity*: Rating for onboard wifi and connectivity.
+The dataset consists of the following fields:  
+- *OverallRating*: The overall rating given by the customer.
+- *ReviewHeader*: The header or title of the customer's review.
+- *Name*: The name of the customer providing the feedback.
+- *Datetime*: The date and time when the feedback was posted.
+- *VerifiedReview*: Indicates whether the review is verified or not.
+- *ReviewBody*: The detailed body of the customer's review.
+- *TypeOfTraveller*: The type of traveler (e.g., Business, Leisure).
+- *SeatType*: Class of the traveler (e.g. Business, Economy).
+- *Route*: The flight route taken by the customer.
+- *DateFlown*: The date when the flight was taken.
+- *SeatComfort*: Rating for seat comfort.
+- *CabinStaffService*: Rating for cabin staff service.
+- *GroundService*: Rating for ground service.
+- *ValueForMoney*: Rating for the value for money.
+- *Recommended*: Whether the customer recommends British Airways.
+- *Aircraft*: The aircraft used for the flight.
+- *Food&Beverages*: Rating for food and beverages.
+- *InflightEntertainment*: Rating for inflight entertainment.
+- *Wifi&Connectivity*: Rating for onboard wifi and connectivity.
 
-The data preparation revovled around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. 
+The data preparation process revolved around cleaning and transforming the dataset as well as conducting text preprocessing for the 'ReviewBody' field. 
 
 Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
