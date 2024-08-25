@@ -164,10 +164,14 @@ With the narrowed scope of concerns, the following are possible aspects that Bri
 
 ## AI Ethics
 In this project, the following potential data science ethics issues may surface:
-- Privacy: The use of customer reviews may raise privacy concerns if personally identifiable information (PII) is not adequately anonymized or if data is collected without user consent. Ensuring that data is de-identified and used in compliance with privacy regulations is essential.The data provides areas such as 
-- Fairness: There may be a risk of bias in the data, which could lead to unfair conclusions or recommendations. For example, if certain demographics are over- or under-represented in the reviews, the resulting models may not fairly represent all customer experiences.
-- Accuracy: Misclassification of topics or incorrect association rules could lead to ineffective or even harmful business decisions.Ensuring the accuracy of the models is crucial to avoid making misleading decisions based on incorrect data interpretations. 
-- Accountability: It is important to establish clear accountability for how data is used and decisions are made. Any automation of responses or service adjustments based on the model's outputs should be carefully monitored and evaluated to ensure it does not negatively impact customer service quality.
+- Privacy
+  - The personally identifiable information (PII) available in the dataset should have been collated with consent. It is also important for it to be adequately anonymized and used in compliance with privacy regulations. Such information can be seen under the ' fields. 
+- Fairness
+  - There may be a risk of bias in the data, which could lead to unfair conclusions or recommendations. For example, if certain demographics are over- or under-represented in the reviews, the resulting models may not fairly represent all customer experiences.
+- Accuracy
+  - If there is a misclassification of topics or surfacing of incorrect association rules, ineffective business decisions may be made. Thus, it is crucial to ensure the accuracy of the models to avoid making misleading decisions based on incorrect interpretations. 
+- Accountability
+  - Any automation of responses or service adjustments based on the model's outputs should be closely monitored and evaluated to ensure it does impact the customer service quality negatively. This should also be reviewed with domain experts to ensure that the outputs are meaningfully and appropriately used. 
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
