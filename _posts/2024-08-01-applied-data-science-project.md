@@ -75,12 +75,15 @@ The data preparation process revolved around cleaning and transforming the datas
 #### Text Pre-processing:
 - Convert all text within the review body to lowercase to normalise the reviews before tokenization.
 - Removal of punctuation (including special characters) to reduce noise in the dataset.
+  - Presence of non-alphabetical characters (e.g. Couldnâ€™t, KeflavÃ­k).
+  - Presence of punctuation in text dataset (e.g. !()-[]{};:'"\,<>./?@#$%^&*_~).
 - Removal of numbers from reviews.
   - Figures in the review are rather specific and may not necessarily provide additional information on the broad topic.
 - Tokenize words in ‘ReviewBody’ column.
 - Remove stop words and domain stop words.
   - Several domain stop words pertaining to British Airlines were found, i.e. ba, british, airways
 - Removal of tokens made up of less than 3 characters.
+  -
 - Lemmatization was conducted to normalise them into a single base form.
 - Map POS tags to WordNet POS Tags to facilitate lemmatization.
 - Lemmatize tokens with POS Tagging.
