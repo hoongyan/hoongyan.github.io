@@ -126,13 +126,38 @@ The modeling approach will involve two techniques: topic modeling and associatio
 #### Topic Modelling 
 Using the cleaned dataset, the 'CleanText' field is vectorised using Term Frequency (TF-IDF) to create the word representation of the reviews. TF-IDF is useful as it can emphasize terms that are most representative of a topic as instead of those that are too common, especially since terms that are rare and specific to a document get higher scores. Subsequently,two models were used for topic modelling, namely the Latent Dirichlet Allocation (LDA) model as well as BERTopic model. 
 
+<img width="824" alt="Screenshot 2024-08-25 at 10 19 20 PM" src="https://github.com/user-attachments/assets/6f188098-e73f-44a2-96d7-1f9e8db3adf1">
+
 ##### Latent Dirichlet Allocation (LDA) Model 
 The LDA model is a probabilistic model that identifies hidden topics within a collection of documents by representing each document as a mixture of topics and each topic as a distribution of words.
 
-The LDA model was trained using the vectorised document. In order to find the optimal number of topics, a perplexity chart was generated between a range of 1 to 20 topics. The optimal number of topics was identified as 7.
+<img width="811" alt="Screenshot 2024-08-25 at 10 19 57 PM" src="https://github.com/user-attachments/assets/0df4f3a6-ba1d-4381-8639-5a095e858f8c">
+
+The LDA model was trained using the vectorised document. In order to find the optimal number of topics, a perplexity chart was generated between a range of 1 to 20 topics. 
+
+<img width="1055" alt="Screenshot 2024-08-25 at 10 20 26 PM" src="https://github.com/user-attachments/assets/9654e869-8c78-49c3-8b1c-fef31c8030e3">
+
+The optimal number of topics was identified as 7, which was used to generate the final model. 
+
+<img width="539" alt="Screenshot 2024-08-25 at 10 21 05 PM" src="https://github.com/user-attachments/assets/7570e54c-90d0-4709-98ae-f675efa671d7">
 
 Based on Intertopic Distance Map, Topic 1,2, 3 and 4 are the most prominent areas of concern and are relatively distinct as they do not overlap or overlap minimally.  
-The relevant words featured in these four topics mainly relate to *seat comfort, cabin service, ground service and food and beverages*.
+
+<img width="494" alt="Screenshot 2024-08-25 at 10 21 32 PM" src="https://github.com/user-attachments/assets/7aa68fe9-1f59-453d-b31f-8554c0c966f1">
+
+The relevant words featured in these four topics mainly relate to *seat comfort, cabin service, ground service and food and beverages*. Relevant terms for each topic are depicted in the charts below. 
+
+*Topic 1*
+<img width="1028" alt="Screenshot 2024-08-25 at 10 21 56 PM" src="https://github.com/user-attachments/assets/7d0e04b7-8613-44a4-a895-d63132a0cf99">
+
+*Topic 2*
+<img width="1010" alt="Screenshot 2024-08-25 at 10 22 16 PM" src="https://github.com/user-attachments/assets/3d05476c-1731-41ea-afe9-65ad515eccda">
+
+*Topic 3*
+<img width="1019" alt="image" src="https://github.com/user-attachments/assets/03a332a6-5d4f-4476-b075-acab4e92e082">
+
+*Topic 4*
+<img width="1019" alt="image" src="https://github.com/user-attachments/assets/70de3021-d9dc-43ac-81c9-1d6e086a169d">
 
 ##### BERTopic Model 
 As a comparison, the BERTopic model, which uses BERT embeddings and clustering algorithms to identify and extract topics from text data, was employed to train the vectorised document as well. 
