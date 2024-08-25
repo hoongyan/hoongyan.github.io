@@ -70,27 +70,16 @@ The data preparation process revolved around cleaning and transforming the datas
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
   - ‘Datetime’ and ‘DateFlown’ are not in datetime format
 - Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
-  - Missing values detected in several fields.
-    Datetime (~20.5%)
-    TypeOfTraveller (~20.8%)
-    Route (~20.9%)
-    DateFlown (~21%)
-    SeatComfort (~3.1%)
-    CabinStaffService (~3.4%)
-    GroundService (~22.9%)
-    Aircraft (~48.1%)
-    Food&Beverages (~10.4%)
-    InflightEntertainment (~31.1%)
-    Wifi&Connectivity (~83.5%)
+  - Missing values were detected in several fields, including Datetime (~20.5%), TypeOfTraveller (~20.8%), Route (~20.9%), DateFlown (~21%), SeatComfort (~3.1%), CabinStaffService (~3.4%), GroundService (~22.9%), Aircraft (~48.1%), Food&Beverages (~10.4%), InflightEntertainment (~31.1%), Wifi&Connectivity (~83.5%).
 
-  
 #### Text Pre-processing:
 - Convert all text within the review body to lowercase to normalise the reviews before tokenization.
-- Removal of punctuation (including special characters) that serve as noise in the dataset.
+- Removal of punctuation (including special characters) to reduce noise in the dataset.
 - Removal of numbers from reviews.
   - Figures in the review are rather specific and may not necessarily provide additional information on the broad topic.
 - Tokenize words in ‘ReviewBody’ column.
-- Remove stop words and domain stop words
+- Remove stop words and domain stop words.
+  - Several domain stop words pertaining to British Airlines were found, i.e. ba, british, airways
 - Removal of tokens made up of less than 3 characters.
 - Lemmatization was conducted to normalise them into a single base form.
 - Map POS tags to WordNet POS Tags to facilitate lemmatization.
@@ -100,6 +89,12 @@ The data preparation process revolved around cleaning and transforming the datas
   - Remove of specific parts of speech (including CC, IN, DT, PRP, AUX, UH)
 
 The cleaned dataset was then used to perform topic modelling and association rule mining.  
+
+Prior to the modelling, further data preprocessing steps were performed:
+- Filtering of reviews with OverallRating <=4 & VerifiedReview = True
+- Filtering of relevant columns for various modelling.
+  - 'SeatComfort', 'CabinStaffService', 'Food&Beverages', 'GroundService','Recommended' for association rule mining
+  - 'CleanText' for Topic Modelling
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
