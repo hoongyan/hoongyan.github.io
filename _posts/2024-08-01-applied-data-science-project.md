@@ -69,6 +69,8 @@ The data preparation process revolved around cleaning and transforming the datas
 #### Data Pre-processing: 
 - Convert ‘Datetime’ and ‘DateFlown’ from string to datetime format.
   - ‘Datetime’ and ‘DateFlown’ are not in datetime format
+    ![Uploading Screenshot 2024-08-25 at 9.50.51 PM.png…]()
+
 - Removal of values for ‘OverallRating’, ‘CabinStaffService’, ‘SeatComfort’, where missing values make up less than 10% of total dataset.
   - Missing values were detected in several fields, including Datetime (~20.5%), TypeOfTraveller (~20.8%), Route (~20.9%), DateFlown (~21%), SeatComfort (~3.1%), CabinStaffService (~3.4%), GroundService (~22.9%), Aircraft (~48.1%), Food&Beverages (~10.4%), InflightEntertainment (~31.1%), Wifi&Connectivity (~83.5%).
 
