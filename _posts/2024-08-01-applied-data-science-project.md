@@ -5,16 +5,44 @@ title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
+
+# Overview of the British Airways Customer Feedback Dataset
+
+This dataset contains customer feedback for British Airways, collected from AirlineQuality through web scraping. It includes both quantitative and qualitative data, providing a comprehensive view of passenger experiences. Key attributes in the dataset cover overall ratings, detailed review texts, traveler types, service ratings (e.g., seat comfort, cabin staff service, ground service), and recommendations. This dataset is ideal for conducting sentiment analysis, topic modeling, and understanding customer satisfaction.
+
+Columns in the Dataset:
+OverallRating: The overall rating given by the customer (1-10 scale).
+ReviewHeader: A brief title summarizing the customer's review.
+Name: Name of the customer.
+Datetime: Date and time when the feedback was posted.
+VerifiedReview: Indicates whether the review is verified.
+ReviewBody: Detailed text of the customer’s review.
+TypeOfTraveller: The type of traveler (e.g., Business, Leisure).
+SeatType: Class of the traveler (e.g., Business, Economy).
+Route: The flight route taken by the customer.
+DateFlown: Date when the flight was taken.
+Service Ratings: Numerical ratings for aspects like SeatComfort, CabinStaffService, GroundService, Food&Beverages, InflightEntertainment, and Wifi&Connectivity.
+Recommended: Whether the customer recommends British Airways (yes/no).
+Aircraft: Model of the aircraft used for the flight.
+Business Goal
+
+Enhance British Airways' Business by 10% by Improving Customer Satisfaction
+
+The primary goal is to boost British Airways' business performance by 10%. This can be achieved by enhancing customer satisfaction through targeted improvements in service areas highlighted in the customer feedback. Understanding the key drivers of customer satisfaction and dissatisfaction will help the airline to address specific issues and enhance overall customer experience.
+
+# Business Objectives
+
+| S/N                    | Business Objective                | Individual  |
+|------------------------|-----------------------------------|--------|
+| Hoong Yan              | To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies. | Yan   |
+| Carlin                 | To analyse review topics for the four different seat types for a more targeted marketing approach, improving business by 10%           | Carlin   |
+| Bridget                | To identify areas of customer satisfaction for marketing purposes, to improve business by 10% | Bridget   |
+| Vivienne               | To reduce negative review sentiments by 10% to improve customer satisfaction and demand.  | Vivienne   |
+
+Business Objective of Focus: To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies.
+
+The objective is to reduce the response time to customer complaints by 10%. This will be achieved by identifying significant areas of concern through topic modeling and association rule mining. By automating responses to frequently mentioned issues, British Airways can improve customer service efficiency, address concerns more promptly, and enhance customer satisfaction. Additionally, by focusing on common complaints, the airline can proactively manage service quality and reduce the number of negative reviews.
 Business Goal: Improve business of British Airways by 10% by enhancing customer satisfaction based on past customer reviews. 
-
-Business Objective: To reduce response time by 10% by identifying significant areas of concern through topic modelling and association rule mining for automation of replies. 
-
-| Feature                | Description                      | Rating |
-|------------------------|----------------------------------|--------|
-| Ground Service         | Quality of services on the ground | Poor   |
-| Seat Comfort           | Comfort level of seats           | Fair   |
-| Cabin Staff Service    | Service provided by cabin staff  | Good   |
-
 
 ## Work Accomplished
 Document your work done to accomplish the outcome
