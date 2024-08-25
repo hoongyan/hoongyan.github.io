@@ -165,9 +165,9 @@ With the narrowed scope of concerns, the following are possible aspects that Bri
 ## AI Ethics
 In this project, the following potential data science ethics issues may surface:
 - Privacy
-  - The personally identifiable information (PII) available in the dataset should have been collated with consent. It is also important for it to be adequately anonymized and used in compliance with privacy regulations. Such information can be seen under the ' fields. 
+  - There are personally identifiable information (PII) available in the dataset that should have been collated with consent. It is important for it to be adequately anonymized and used in compliance with privacy regulations. 
 - Fairness
-  - There may be a risk of bias in the data, which could lead to unfair conclusions or recommendations. For example, if certain demographics are over- or under-represented in the reviews, the resulting models may not fairly represent all customer experiences.
+  - There may be a risk of bias in the data, which could lead to unfair business decisions. For example, if certain demographics are over- or under-represented in the reviews, the resulting models may not fairly represent all customer experiences.
 - Accuracy
   - If there is a misclassification of topics or surfacing of incorrect association rules, ineffective business decisions may be made. Thus, it is crucial to ensure the accuracy of the models to avoid making misleading decisions based on incorrect interpretations. 
 - Accountability
